@@ -17,15 +17,40 @@ video {
 body {
   color: white;
   background: black;
-  font-family: sans-serif;
-  font-weight: 100;
+  font-family: "Inter", sans-serif;
+  font-weight: 350;
+}
+
+.buttons {
+  display: flex;
+  margin: 180px 150px;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+
+.feuille {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: all 200ms ease-in-out;
+}
+
+.feuille.is-open {
+  transform: translateX(0);
 }
 
 .scheisse {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -100px;
+  margin: 0;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 .drawers {
@@ -35,11 +60,15 @@ body {
   margin-left: 28px;
 }
 
+.drawer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .drawer-text {
   position: relative;
-  bottom: 70;
-  left: 20;
-  font-size: 20;
+  bottom: 73;
 }
 
 .drawer-2 {
@@ -48,6 +77,7 @@ body {
 }
 
 .drawer-3 {
+  font-size: 25px;
   position: relative;
   top: 3;
   right: 6;
