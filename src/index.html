@@ -2,41 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>Portfolio de la gentille Marta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="scheisse">
-      <img class="me" src="./imgs/nyeh.png" />
-      <img class="box" src="./imgs/box.png" />
-      <div class="drawers">
-        <div class="animate drawer-1">
-          <a href="#one">
+    <div class="l-box">
+      <img class="landing-creature" src="./imgs/nyeh.png" />
+
+      <img class="landing-box" src="./imgs/box.png" />
+
+      <div class="landing-buttons">
+        <div class="landing-button drawer-1">
+          <a href="https://www.tumblr.com/uncle-on-the-sofa">
             <img src="./imgs/smalldrawer2.png" />
           </a>
 
-          <p class="drawer-text">scheisse</p>
+          <p class="landing-button-text">tumblr</p>
         </div>
 
-        <div class="animate drawer-2">
-          <a href="#two">
+        <div class="landing-button drawer-2">
+          <a href="https://toyhou.se/uncle-on-the-sofa">
             <img src="./imgs/smalldrawer1.png" />
           </a>
 
-          <p class="drawer-text">toyhouse</p>
+          <p class="landing-button-text">toyhouse</p>
         </div>
 
-        <div class="animate drawer-3">
+        <div class="landing-button drawer-3">
           <a href="#dreier">
             <img src="./imgs/longdrawer.png" />
           </a>
 
-          <p class="drawer-text">projects</p>
+          <p class="landing-button-text">projects</p>
         </div>
       </div>
     </div>
 
+    <div class="l-menu">
+      <p id="#resume">? Resumé</p>
+    </div>
+
+    <div class="landing-popup">
+      <img src="./imgs/resume.png" alt="" />
+      <p>Click anywhere to close</p>
+    </div>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
