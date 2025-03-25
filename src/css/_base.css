@@ -23,19 +23,9 @@ body {
 }
 
 html {
-  image-rendering: pixelated;
   cursor: url("../imgs/mouse.svg"), none;
 }
 
 a:hover {
   cursor: url("../imgs/mouse.svg"), none;
-}
-
-.cursor {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background: red;
-  position: fixed;
-  pointer-events: none;
 }

@@ -8,17 +8,12 @@
 }
 
 .index-popup {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transform: translateX(100%);
+  inset: 0;
   transition: all 200ms ease-in-out;
 }
 
-.index-popup p {
+.index-popup-help {
   margin-top: 20px;
 }
 
@@ -28,4 +23,18 @@
 
 .index-bottom-img {
   width: 100px;
+}
+
+.index-popup-content {
+  font-size: 20px;
+  width: 400px;
+}
+
+.index-popup-content,
+.index-popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
