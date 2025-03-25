@@ -1,5 +1,5 @@
 .l-box {
-  z-index: -1;
+  z-index: 0;
   position: fixed;
   top: 0;
   top: 50%;
@@ -8,18 +8,50 @@
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
-  animation: hover 2000ms infinite ease-in-out;
+  /* animation: float 2000ms infinite ease-in-out; */
 }
 
-@keyframes hover {
+@keyframes float {
   50% {
     transform: translate(-50%, -48%);
   }
 }
 
 .l-menu {
+  position: fixed;
   display: flex;
-  margin: 180px 150px;
   justify-content: flex-end;
   font-size: 30px;
+  width: 100%;
+  top: 200px;
+  right: 30px;
+}
+
+.l-bottom-img {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+  padding-bottom: 70px;
+}
+
+.l-buttons {
+  margin-top: -146px;
+  display: flex;
+  gap: 32px;
+  margin-left: 28px;
+}
+
+.l-overlay {
+  transition: all 200ms linear;
+}
+
+.l-overlay.is-active {
+  inset: 0;
+  position: fixed;
+  height: 1000px;
+  width: 1000px;
+  background-color: black;
+  opacity: 0.5;
 }
